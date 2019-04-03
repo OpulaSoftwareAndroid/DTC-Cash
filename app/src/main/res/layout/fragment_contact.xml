@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"/>
+
+            <EditText
+                android:id="@+id/ed_ContactInfo_Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/border_black"
+                android:inputType="text"
+                android:padding="@dimen/_7sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/half_black"
+                android:textSize="@dimen/_14sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="Country"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"/>
+
+            <EditText
+                android:id="@+id/ed_ContactInfo_Country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/ed_disable"
+                android:enabled="false"
+                android:inputType="text"
+                android:padding="@dimen/_7sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/half_black"
+                android:textSize="@dimen/_14sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="State"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"/>
+
+            <EditText
+                android:id="@+id/ed_ContactInfo_State"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/border_black"
+                android:inputType="text"
+                android:padding="@dimen/_7sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/half_black"
+                android:textSize="@dimen/_14sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="City"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"/>
+
+            <EditText
+                android:id="@+id/ed_ContactInfo_City"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/border_black"
+                android:inputType="text"
+                android:padding="@dimen/_7sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/half_black"
+                android:textSize="@dimen/_14sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="Pin Code"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"/>
+
+            <EditText
+                android:id="@+id/ed_ContactInfo_PinCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/border_black"
+                android:inputType="number"
+                android:padding="@dimen/_7sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/half_black"
+                android:textSize="@dimen/_14sdp"/>
+
+            <TextView
+                android:id="@+id/tv_ContactInfo_Save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/btn_for_all"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

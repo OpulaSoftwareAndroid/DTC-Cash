@@ -1,0 +1,126 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_7sdp"
+    android:layout_marginRight="@dimen/_7sdp"
+    android:layout_marginTop="@dimen/_7sdp"
+    android:background="@color/white"
+    app:cardElevation="@dimen/_3sdp">
+
+    <LinearLayout
+        android:id="@+id/relative_buy_voucher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingTop="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ItemLendingHistory_Type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_2sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:singleLine="true"
+                android:text="Type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"/>
+
+            <TextView
+                android:id="@+id/tv_ItemLendingHistory_Amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingBottom="@dimen/_2sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:singleLine="true"
+                android:text="Amount"
+                android:textSize="@dimen/_14sdp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ItemLendingHistory_Fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:singleLine="true"
+                android:text="Type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"/>
+
+            <TextView
+                android:id="@+id/tv_ItemLendingHistory_Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingBottom="@dimen/_2sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:singleLine="true"
+                android:text="Date : 2017-11-21 12:16:11"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_ItemLendingHistory_Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_2sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:singleLine="false"
+            android:text="Descriptionsn"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"/>
+        <TextView
+            android:id="@+id/tv_ItemLendingHistory_Txid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_2sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:singleLine="false"
+            android:text="Txid"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"/>
+        <TextView
+            android:id="@+id/tv_ItemLendingHistory_Status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_2sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:singleLine="false"
+            android:text="Status"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"/>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

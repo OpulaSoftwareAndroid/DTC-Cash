@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "117911670608",
+    "firebase_url": "https://dt-cash.firebaseio.com",
+    "project_id": "dt-cash",
+    "storage_bucket": "dt-cash.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117911670608:android:2048f795cf2b9dbd",
+        "android_client_info": {
+          "package_name": "com.powerbtc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117911670608-h59ghp8ufpjmtme3lhghugrhk4afojio.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDstOj2swKiLHcGZWbSf5C-mECeoBCMDxs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

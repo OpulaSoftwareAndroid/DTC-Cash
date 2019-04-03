@@ -1,0 +1,215 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <TextView
+        android:id="@+id/tv_Send_TRC_Balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="@dimen/_5sdp"
+        android:singleLine="true"
+        android:text="Balance : 0.003 DTCH"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_16sdp"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp">
+
+
+            <EditText
+                android:id="@+id/ed_Send_TRC_Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@android:color/transparent"
+                android:hint="DTCH address"
+                android:padding="@dimen/_7sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/half_black"
+                android:textSize="@dimen/_13sdp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:alpha="0.5"
+                android:background="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linear_Send_TRC_Paste"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_for_all"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:padding="@dimen/_3sdp"
+                        android:src="@drawable/icon_copy"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_Send_TRC_QrCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:background="@drawable/btn_for_all"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:padding="@dimen/_3sdp"
+                        android:src="@drawable/icon_qr_code"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_Send_Fees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="@dimen/_5sdp"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/black"
+                android:text="Fees : 0.00%"/>
+
+
+            <EditText
+                android:id="@+id/ed_Send_TRC_Amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@android:color/transparent"
+                android:hint="Amount"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/_7sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/half_black"
+                android:textSize="@dimen/_13sdp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:alpha="0.5"
+                android:background="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/tv_Send_TRC_Fees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/ed_disable"
+                android:enabled="false"
+                android:hint="Fees"
+                android:padding="@dimen/_7sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/half_black"
+                android:textSize="@dimen/_13sdp"/>
+
+
+            <TextView
+                android:id="@+id/tv_Send_TRC_TotalAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/ed_disable"
+                android:enabled="false"
+                android:hint="Total Amount"
+                android:padding="@dimen/_7sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/half_black"
+                android:textSize="@dimen/_13sdp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:alpha="0.5"
+                android:background="@color/black"/>
+
+            <EditText
+                android:id="@+id/ed_Send_TRC_TransPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@android:color/transparent"
+                android:hint="Transaction Password"
+                android:inputType="textPassword"
+                android:padding="@dimen/_7sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/half_black"
+                android:textSize="@dimen/_13sdp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:alpha="0.5"
+                android:background="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/tv_Send_TRC_Submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/btn_for_all"
+                android:gravity="center"
+                android:padding="@dimen/_7sdp"
+                android:text="Send"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

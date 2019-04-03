@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        app:cardElevation="@dimen/_3sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_1sdp"
+                        android:layout_marginRight="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/tv_Ticket_Title"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="Create Ticket"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_16sdp"/>
+
+                        <ImageView
+                            android:id="@+id/image_DialogCreateTicket_Close"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:padding="@dimen/_3sdp"
+                            android:tint="@color/black"
+                            android:src="@drawable/cancel_styl"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingRight="@dimen/_15sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="User Name"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <EditText
+                            android:id="@+id/ed_DialogCreateTicket_UserName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@drawable/border_black"
+                            android:inputType="number"
+                            android:padding="@dimen/_7sdp"
+                            android:singleLine="true"
+                            android:enabled="false"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/half_black"
+                            android:textSize="@dimen/_13sdp"/>
+
+                        <TextView
+                            android:id="@+id/tv_subject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:text="Subject"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <EditText
+                            android:id="@+id/ed_DialogCreateTicket_Subject"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@drawable/border_black"
+                            android:inputType="text"
+                            android:padding="@dimen/_7sdp"
+                            android:text=""
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/half_black"
+                            android:textSize="@dimen/_13sdp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:text="Attachment"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@drawable/border_black"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_5sdp">
+
+                            <EditText
+                                android:id="@+id/tv_DialogTicketDetails_FileName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:enabled="false"
+                                android:maxLines="1"
+                                android:paddingLeft="@dimen/_5sdp"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:singleLine="true"
+                                android:text="File name"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"/>
+
+                            <ImageView
+                                android:id="@+id/image_DialogTicketDetails_Attachment"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:tint="@color/colorPrimary"
+                                android:src="@drawable/icon_attachment"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:text="Message"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <EditText
+                            android:id="@+id/ed_DialogCreateTicket_Msg"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_80sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@drawable/border_black"
+                            android:gravity="start"
+                            android:maxLines="3"
+                            android:padding="@dimen/_7sdp"
+                            android:singleLine="false"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/half_black"
+                            android:textSize="@dimen/_13sdp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_DialogCreateTicket_Submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:background="@drawable/btn_for_all"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:paddingLeft="@dimen/_25sdp"
+                        android:paddingRight="@dimen/_25sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
